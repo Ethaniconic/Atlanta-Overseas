@@ -18,7 +18,7 @@ import NextLink from 'next/link';
 import { Section, Button } from '@/components/UIAtoms';
 
 export default function HomePage() {
-  const whatsappUrl = "https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Overseas%20Education%20counseling%20at%20Atlanta.";
+  const whatsappUrl = "https://wa.me/15556769761?text=Hi,%20I%20am%20interested%20in%20Overseas%20Education%20counseling%20at%20Atlanta.";
 
   return (
     <main>

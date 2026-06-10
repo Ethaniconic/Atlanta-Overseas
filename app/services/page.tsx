@@ -6,7 +6,7 @@ import { Stethoscope, GraduationCap, Languages, FileCheck, ArrowRight, CheckCirc
 import { Section, Button } from '@/components/UIAtoms';
 
 export default function ServicesPage() {
-  const whatsappUrl = "https://wa.me/919028157794?text=Hi,%20I%20am%20interested%20in%20Overseas%20Education%20counseling%20at%20Atlanta.";
+  const whatsappUrl = "https://wa.me/15556769761?text=Hi,%20I%20am%20interested%20in%20Overseas%20Education%20counseling%20at%20Atlanta.";
 
   const services = [
     {
