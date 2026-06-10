@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0f172a;
+  --color-brand-accent: #f59e0b;
+  --color-brand-whatsapp: #10b981;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-border: #e2e8f0;
+  --muted: #64748b;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f1f5f9;
+  --card: #0f172a;
+  --card-border: #1e293b;
+  --muted: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased transition-colors duration-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+.glass-nav {
+  @apply sticky top-0 z-50 w-full border-b border-[var(--card-border)] bg-[var(--background)]/80 backdrop-blur-md;
+}
+
+.section-padding {
+  @apply py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto;
+}
+
+.btn-primary {
+  @apply bg-brand-navy text-white hover:bg-slate-800 dark:bg-slate-100 dark:text-brand-navy dark:hover:bg-white px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2;
+}
+
+.btn-secondary {
+  @apply border-2 border-[var(--foreground)] text-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-[var(--background)] px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2;
+}
+
+.btn-whatsapp {
+  @apply bg-brand-whatsapp text-white hover:bg-emerald-600 px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-emerald-200 dark:shadow-none;
+}
+
+.card-style {
+  @apply bg-[var(--card)] border border-[var(--card-border)] p-8 rounded-3xl transition-all duration-300;
+}
