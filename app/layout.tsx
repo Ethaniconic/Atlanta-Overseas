@@ -44,6 +44,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/atlanta-overseas-cropped.png",
   },
+  verification: {
+    google: "SuAq-euq3XYrZi5neitcYt391ELoJ8LGjjpjhJpXd80",
+  },
 };
 
 export default function RootLayout({
